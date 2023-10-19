@@ -17,6 +17,7 @@
     border-radius:10px;
     display: flex;
     color:black;
+    max-height:90%;
 }
 
 .modal-image-container {
@@ -28,6 +29,8 @@
 .modal-image {
     border-radius:10px 0 0 10px; 
     height: 100%;
+    width:100%;
+    object-fit: cover;
     overflow: hidden;
 }
 
@@ -139,7 +142,9 @@
     .modal {
         flex-direction: column;
         overflow-y: scroll;
+        overflow-x: hidden;
         max-height:80%;
+        max-width: 90%;
     }
 
     .modal-info-container {
@@ -161,6 +166,7 @@
         border-radius:10px 10px 0 0;
         width:100%;
         overflow: hidden;
+        object-fit: contain;
     }
 
 }
