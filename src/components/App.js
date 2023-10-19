@@ -6,7 +6,6 @@ import Navbar from './navbar.js'
 import Header from './header.js'
 import Darkmode from './darkmode.js'
 import Modal from './modal.js'
-import DefaultImages from './randomimages.js'
 
 const API_URL = 'https://api.unsplash.com/';
 const IMAGES_PER_PAGE = 30;
