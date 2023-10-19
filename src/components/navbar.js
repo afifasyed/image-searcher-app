@@ -14,7 +14,6 @@ export default function Navbar(props) {
                 if(searchBarOpen === true) {
                     setSearchBar(!searchBarOpen) }
             }}}>
-                {/* onChange = {props.searchHandler(target.value)} */}
             <h3>ImageSearcher</h3>
             <form className="search-form"onSubmit={props.changehandler}>
                 <input id='search-box' className={searchBarOpen ? 'search-box' : 'search-bar-hidden'}
