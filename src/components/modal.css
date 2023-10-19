@@ -1,0 +1,166 @@
+.modal-container {
+    position: fixed;
+    z-index:1;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--modal_container_background);
+
+}
+
+.modal {
+    background-color: var(--modal_background);
+    border-radius:10px;
+    display: flex;
+    color:black;
+}
+
+.modal-image-container {
+    position: relative;
+    display:flex;
+    align-items: center;
+}
+
+.modal-image {
+    border-radius:10px 0 0 10px; 
+    height: 100%;
+    overflow: hidden;
+}
+
+.modal-info-container {
+    color:var(--body_color);
+    display: flex;
+    flex-direction: column;
+    margin:20px;
+    width:200px;
+}
+
+.modal-user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom:15px;
+}
+
+.modal-user-container {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.modal-names > h5 {
+    margin:0;
+    font-size:14px;
+}
+
+.modal-names > i {
+    font-size: 14px;
+}
+
+.modal-user-pic {
+    height:40px;
+    width:40px;
+    border-radius:20px;
+    margin-right:9px;
+}
+
+.modal-socials {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color:var(--link_color)
+}
+
+.social-data {
+    display: flex;
+    align-items: center;
+}
+
+.socials-icon {
+    margin-right:3px;
+}
+
+.modal-likes {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.like-icon {
+    margin-right:3px;
+}
+
+.modal-tags > h5 {
+    margin:0 0 10px 0;
+}
+
+.tag-btn {
+    font-size: 14px;
+    padding:5px 10px;
+    margin:5px;
+    background-color:var(--tag_btn_background);
+    border:none;
+    border-radius: 5px;
+}
+
+.download-overlay {
+    position: absolute;
+    right:20px;
+    bottom:20px;
+    box-sizing: border-box;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Montserrat";
+    width:133px;
+    padding:10px 13px;
+    cursor: pointer;
+    background: none;
+    color:white;
+    font-size: 16px;
+    transition: 0.3s ease;
+    text-align: center;
+    border:1px solid white;
+    border-radius:10px;
+}
+
+.download-btn:hover {
+    background-color: rgba(20, 20, 20, 0.4);
+    border-radius:15px;
+}
+
+@media screen and (max-width:850px) {
+    .modal {
+        flex-direction: column;
+        overflow-y: scroll;
+        max-height:80%;
+    }
+
+    .modal-info-container {
+        width:90%;
+    }
+
+    .modal-user-container {
+        flex-direction: row;
+        width:100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .modal-user-info {
+        margin-bottom:0;
+    }
+
+    .modal-image {
+        border-radius:10px 10px 0 0;
+        width:100%;
+        overflow: hidden;
+    }
+
+}

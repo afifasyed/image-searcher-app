@@ -1,0 +1,45 @@
+.toggler {
+    position: relative;
+    display: inline-block;
+    width:40px;
+    height:20px;
+}
+
+.toggler > input {
+    opacity:0;
+    width:0;
+    height:0;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    background-color: rgb(182, 200, 192);
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.slider:before {
+    position: absolute;
+    content:"";
+    height:12px;
+    width:12px;
+    border-radius:6px;
+    left:4px;
+    bottom:4px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+input:checked + .slider {
+    background-color: rgb(50, 69, 61);
+}
+
+input:checked + .slider:before {
+    transform: translateX(18px);
+    background-color: rgb(85, 132, 115);
+}

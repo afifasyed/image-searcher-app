@@ -1,0 +1,29 @@
+:root {
+    --body_background: rgb(231, 240, 236);
+    --body_color:black;
+    --link_color:grey;
+    --nav_bg_color:rgb(229, 240, 235);
+    --button-color:rgb(25, 41, 29);
+    --card_color:rgb(231, 240, 236);
+    --border_color:rgb(128, 128, 128);
+    --modal_container_background:rgb(0,0,0,0.4);
+    --modal_background:rgb(255, 255, 255);
+    --tag_btn_background: rgb(220, 220, 220);
+}
+
+[data-theme='dark'] {
+    --body_background: rgb(28, 30, 29);
+    --body_color:rgb(200, 200, 200);
+    --link_color:grey;
+    --nav_bg_color:rgb(25, 34, 30);
+    --button-color:rgb(31, 57, 37);
+    --card_color:rgb(15, 17, 16);
+    --border_color:rgb(79, 79, 79);
+    --modal_container_background:rgba(0,0,0,0.7);
+    --modal_background:rgb(40, 40, 40);
+    --tag_btn_background: rgb(127, 127, 127);
+}
+
+* {
+    transition: all 0.1s ease-in-out;
+}
