@@ -56,3 +56,9 @@
 .header-main-search:focus {
     outline:none;
 }
+
+@media screen and (max-width:750px) {
+    .header-main-search::-webkit-input-placeholder {
+        color:transparent;
+    }
+}
