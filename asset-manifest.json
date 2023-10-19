@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/image-searcher-app/static/css/main.a692774b.css",
+    "main.js": "/image-searcher-app/static/js/main.49e66eab.js",
+    "static/media/wallpaper.jpg": "/image-searcher-app/static/media/wallpaper.108ac51a4a8fdd24af94.jpg",
+    "index.html": "/image-searcher-app/index.html",
+    "main.a692774b.css.map": "/image-searcher-app/static/css/main.a692774b.css.map",
+    "main.49e66eab.js.map": "/image-searcher-app/static/js/main.49e66eab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a692774b.css",
+    "static/js/main.49e66eab.js"
+  ]
+}
